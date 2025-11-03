@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "type": "expert",
+    "reference_id": 1,
+    "added_by": "patient1"
+  },
+  {
+    "id": 2,
+    "type": "publication",
+    "reference_id": 2,
+    "added_by": "patient1"
+  }
+]

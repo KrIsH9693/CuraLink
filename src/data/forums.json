@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "New Glioblastoma Treatments",
+    "category": "Research Questions",
+    "author": "Patient123",
+    "date": "2025-10-01",
+    "content": "Has anyone tried the new Phase II drug trial for glioblastoma?"
+  },
+  {
+    "id": 2,
+    "title": "Clinical Trial Experiences",
+    "category": "Clinical Trials",
+    "author": "Patient456",
+    "date": "2025-09-25",
+    "content": "Sharing my experience with brain cancer immunotherapy trials."
+  }
+]

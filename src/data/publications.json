@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Novel Glioblastoma Treatment Approaches",
+    "authors": ["Dr. Alice Johnson", "Dr. Bob Smith"],
+    "journal": "Journal of Neuro-Oncology",
+    "year": 2023,
+    "link": "https://example.com/publication1",
+    "summary": "This study explores new treatment strategies for glioblastoma."
+  },
+  {
+    "id": 2,
+    "title": "Brain Cancer Immunotherapy Advances",
+    "authors": ["Dr. Clara Oswald"],
+    "journal": "Cancer Research",
+    "year": 2022,
+    "link": "https://example.com/publication2",
+    "summary": "A review of recent immunotherapy trials in brain cancer."
+  }
+]

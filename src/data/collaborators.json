@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Clara Oswald",
+    "field": "Neuroscience",
+    "institution": "MIT",
+    "email": "clara.oswald@example.com",
+    "location": "Cambridge, MA"
+  },
+  {
+    "id": 2,
+    "name": "Dr. David Tennant",
+    "field": "Oncology",
+    "institution": "Johns Hopkins University",
+    "email": "david.tennant@example.com",
+    "location": "Baltimore, MD"
+  }
+]

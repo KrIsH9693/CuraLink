@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Phase II Trial of Drug X in Glioblastoma",
+    "condition": "Glioblastoma",
+    "phase": "Recruiting",
+    "location": "Boston, MA",
+    "contact_email": "trial1@hospital.org"
+  },
+  {
+    "id": 2,
+    "title": "Brain Cancer Immunotherapy Study",
+    "condition": "Brain Cancer",
+    "phase": "Active",
+    "location": "Stanford, CA",
+    "contact_email": "trial2@hospital.org"
+  }
+]
