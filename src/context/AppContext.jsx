@@ -4,11 +4,13 @@ import { createContext, useState } from "react";
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  // Patients
+  // 🧍 Patients
   const [patients, setPatients] = useState([]);
-  // Researchers
+
+  // 👩‍🔬 Researchers
   const [researchers, setResearchers] = useState([]);
-  // Experts (for patients)
+
+  // 🧠 Experts (for patients)
   const [experts, setExperts] = useState([
     {
       name: "Dr. Alice Smith",
@@ -25,7 +27,8 @@ export const AppProvider = ({ children }) => {
       email: "",
     },
   ]);
-  // Clinical Trials
+
+  // 🧪 Clinical Trials
   const [trials, setTrials] = useState([
     {
       title: "Brain Cancer Trial Phase 1",
@@ -38,7 +41,8 @@ export const AppProvider = ({ children }) => {
       contact: "trial2@example.com",
     },
   ]);
-  // Publications
+
+  // 📚 Publications
   const [publications, setPublications] = useState([
     {
       title: "AI in Brain Cancer",
@@ -54,7 +58,39 @@ export const AppProvider = ({ children }) => {
     },
   ]);
 
-  // Functions to add new data dynamically
+  // 💬 Forums
+  const [forums, setForums] = useState([
+    {
+      id: 1,
+      topic: "AI in Brain Cancer Research",
+      content: "Let's discuss latest AI trends in oncology research.",
+      author: "Dr. Alice Smith",
+    },
+    {
+      id: 2,
+      topic: "Collaboration Opportunities",
+      content: "Looking for partners for clinical trial on Glioblastoma.",
+      author: "Dr. John Doe",
+    },
+  ]);
+
+  // ⭐ Favorites
+  const [favorites, setFavorites] = useState([
+    {
+      id: 1,
+      title: "Interesting Clinical Trial",
+      description: "A new trial focusing on targeted therapy.",
+      extra: "Phase II",
+    },
+    {
+      id: 2,
+      title: "AI Research Paper",
+      description: "Deep learning approach for MRI segmentation.",
+      extra: "2023 Publication",
+    },
+  ]);
+
+  // 🔧 Functions to add new data dynamically
   const addPatientProfile = (patient) => {
     setPatients((prev) => [...prev, patient]);
   };
@@ -75,19 +111,34 @@ export const AppProvider = ({ children }) => {
     setPublications((prev) => [...prev, publication]);
   };
 
+  const addForum = (forum) => {
+    setForums((prev) => [...prev, forum]);
+  };
+
+  const addFavorite = (favorite) => {
+    setFavorites((prev) => [...prev, favorite]);
+  };
+
   return (
     <AppContext.Provider
       value={{
+        // data
         patients,
         researchers,
         experts,
         trials,
         publications,
+        forums,
+        favorites,
+
+        // functions
         addPatientProfile,
         addResearcherProfile,
         addExpert,
         addTrial,
         addPublication,
+        addForum,
+        addFavorite,
       }}
     >
       {children}
